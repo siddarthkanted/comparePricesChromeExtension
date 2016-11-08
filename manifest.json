@@ -1,11 +1,11 @@
 {
 	"manifest_version": 2,
 
-	"name":"Easy Searching",
+	"name":"Compare prices",
 	
-	"description":"Easy searching for on-line purchase in India",
+	"description":"Compare prices for flights, bus booking, grocery, movie ticket purchase in India",
 	
-	"version":"26.0",
+	"version":"28.0",
 
 	"browser_action": {
 		"default_icon":"icon.png",
