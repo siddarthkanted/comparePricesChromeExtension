@@ -1,0 +1,95 @@
+.itemborder{
+    border-color: rgb(41, 33, 109);
+    border-radius: 0px 2px 2px 0px;
+    border-width: 1px;
+    box-shadow: rgb(203, 203, 203) 0px 0px 2px 2px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;}		
+		
+.row {
+    display: flex;
+}
+
+.searchtextbox {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.topbar{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color: #242729;
+    min-width: 1075px;
+    padding: 10px;
+	width: 100%;
+    background: rgba(236, 68, 28, 0.86);
+	color: #ccc;
+	z-index: 99 !important;
+	text-align:center;
+}
+
+.centersearchtextbox {
+    width: 600px !important;
+	height: 47px !important;
+    box-sizing: border-box !important;
+    border: 2px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 16px !important;
+    background-color: white !important;
+    background-image: url('searchicon.png') !important;
+    background-position: 10px 10px !important;
+    background-repeat: no-repeat !important;
+    padding: 12px 20px 12px 40px !important;
+    -webkit-transition: width 0.4s ease-in-out !important;
+    transition: width 0.4s ease-in-out !important;
+	text-align:center !important;
+}
+
+.header-logo-invertocat {
+    float: left;
+    margin-right: 10px;
+    margin-left: -2px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.highlightGreen{
+    background-color: green;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.checkbox{
+	margin-left: 10px !important;
+	vertical-align: baseline !important;
+	position: middle !important; 
+}
+
+.blueText{
+    color: #07C;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.highlightRed{
+    background-color: red;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	margin-left: 10px;
+},
