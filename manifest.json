@@ -5,7 +5,7 @@
 	
 	"description":"Compare prices for flights, bus booking, grocery, movie ticket purchase in India",
 	
-	"version":"30.0",
+	"version":"31.0",
 
 	"browser_action": {
 		"default_icon":"icon.png",
