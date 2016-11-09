@@ -5,7 +5,7 @@
 	
 	"description":"Compare prices for flights, bus booking, grocery, movie ticket purchase in India",
 	
-	"version":"28.0",
+	"version":"30.0",
 
 	"browser_action": {
 		"default_icon":"icon.png",
@@ -23,14 +23,39 @@
 	"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
 	
 	"content_scripts": [
-        {
-        "matches": [
-"*://*.zopnow.com/*","*://*.bigbasket.com/*","*://*.amazon.in/*","*://*.flipkart.com/*","*://flipkart.com/*","*://*.snapdeal.com/*", "*://ebay.in/*","*://jabong.com/*", "*://shopclues.com/*", "*://paytm.com/*", "*://myntra.com/*"
-            ],
-        "js": ["contentScript.js", "jquery-1.10.2.js", "displayItems.js","defaultOffers.js", "ajaxResponse.js"],
-		"css": [ "popup.css" ],
+        
+		{
+        "matches":
+		[
+				"*://*.zopnow.com/*","*://*.bigbasket.com/*","*://*.amazon.in/*","*://*.flipkart.com/*","*://*.snapdeal.com/*", "*://ebay.in/*","*://jabong.com/*", "*://shopclues.com/*", "*://paytm.com/*", "*://myntra.com/*"
+        ],
+        "js": ["jquery/jquery-ui-1.12.1/external/jquery/jquery.js", "popup.js", "jquery/jquery-ui-1.12.1/jquery-ui.min.js", "popup.js", "shop.js", "shopContentScript.js", "displayItems.js","defaultOffers.js", "ajaxResponse.js"],
+		"css": [ "popup.css", "jquery/jquery-ui-1.12.1/jquery-ui-contentScript.css" ],
+        "run_at": "document_end"         
+        },
+		
+		{
+        "matches":
+		[
+				"*://*.goibibo.com/*", "*://*.cleartrip.com/*", "*://*.yatra.com/*", "*://*.flywidus.com/*", "*://*.paytm.com/flights/*", "*://*.ixigo.com/*", "*://*.makemytrip.com/*" 
+        ],
+        "js": ["jquery/jquery-ui-1.12.1/external/jquery/jquery.js", "popup.js", "jquery/jquery-ui-1.12.1/jquery-ui.min.js", "popup.js", "flights.js", "flightContentScript.js"],
+		"css": [ "popup.css", "jquery/jquery-ui-1.12.1/jquery-ui-contentScript.css" ],
+        "run_at": "document_end"         
+        },
+		
+		{
+        "matches":
+		[
+				"*://*.paytm.com/bus-tickets/*", "*://*.goibibo.com/bus/*", "*://*.makemytrip.com/bus/*", "*://*.ixigo.com/search/result/bus/*" 
+        ],
+        "js": ["jquery/jquery-ui-1.12.1/external/jquery/jquery.js", "popup.js", "jquery/jquery-ui-1.12.1/jquery-ui.min.js", "popup.js", "bus.js", "busContentScript.js"],
+		"css": [ "popup.css", "jquery/jquery-ui-1.12.1/jquery-ui-contentScript.css" ],
         "run_at": "document_end"         
         }
+		
+		
+		
     ],
 	
 	"background": {
@@ -38,5 +63,5 @@
     "persistent": false
   },
   
-   "web_accessible_resources": [ "icon.png", "icon_75x75.png"]
+   "web_accessible_resources": [ "icon.png", "icon_75x75.png", "jquery/jquery-ui-1.12.1/images/*"]
 }

@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+	busInit();
+});
+
+function busInit(){
 		busDatePickerSetUp();
 		busAutoCompleteSetUp();
 		document.getElementById("busSearchButton").onclick = function() {openBusTabs()};
-});
-
+}
 
 function openBusTabs(){
 	var sourceNameText = document.getElementById("busSourceNameText").value;

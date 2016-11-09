@@ -4,7 +4,7 @@ var offers = [
 	partnerName:"Amazon",
 	partnerImage:"https://affilateimage.file.core.windows.net/image/amzLogo_70x70.png?sv=2015-04-05&ss=f&srt=sco&sp=rc&se=2017-08-24T23:20:07Z&st=2016-08-27T15:20:07Z&spr=https,http&sig=vWUGrL9fdCgyigkbgCCtK9aNIYEMAtamGqnSiP3Kn8U%3D",
 	partnerDescription:"Awesome Money Saving Deals",
-	partnerClickLink:"http://www.amazon.in/gp/goldbox/all-deals/?ie=UTF8&camp=3626&creative=24790&linkCode=ur2&tag=httpssiddarth-21",
+	partnerClickLink:"http://www.amazon.in/gp/goldbox/all-deals/?ie=UTF8&camp=3626&creative=24790&linkCode=ur2&tag=awesomechromeextension-21",
 	partnerPrice:""
 },
 

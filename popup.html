@@ -25,14 +25,13 @@
 	
 		<div id="Shopping">
 			<input type="text" placeholder="Enter the product name" id="productNameText" class="searchtextbox"></input><br><br>
-			<input type="checkbox" name="checkboxList" id="amazonCheckbox" value="http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={0}&tag=awesomechromeextension-21" checked>Amazon</input><br>
-			<input type="checkbox" name="checkboxList" id="flipkartCheckbox" value="https://www.flipkart.com/search?q={0}&affid=siddarthk" checked>Flipkart</input><br>
-			<input type="checkbox" name="checkboxList" id="snapdealCheckbox" value="https://www.snapdeal.com/search?keyword={0}&aff_id=77922" checked>Snapdeal</input><br>
-			<input type="checkbox" name="checkboxList" id="ebayCheckbox" value="http://www.ebay.in/sch/i.html?_nkw={0}" checked>Ebay</input><br>
-			<input type="checkbox" name="checkboxList" id="paytmCheckbox" value="https://paytm.com/shop/search?q={0}" checked>Paytm</input><br>
-			<input type="checkbox" name="checkboxList" id="bigbasketCheckbox" value="http://www.bigbasket.com/ps/?q={0}" checked>Bigbasket</input><br>
-			
-			<br><a id="submitButton" class="highlightGreen">Search product</a>
+			<input type="checkbox" name="productCheckboxList" id="amazonCheckbox" value="http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={0}&tag=awesomechromeextension-21" checked>Amazon</input><br>
+			<input type="checkbox" name="productCheckboxList" id="flipkartCheckbox" value="https://www.flipkart.com/search?q={0}&affid=siddarthk" checked>Flipkart</input><br>
+			<input type="checkbox" name="productCheckboxList" id="snapdealCheckbox" value="https://www.snapdeal.com/search?keyword={0}&aff_id=77922" checked>Snapdeal</input><br>
+			<input type="checkbox" name="productCheckboxList" id="ebayCheckbox" value="http://www.ebay.in/sch/i.html?_nkw={0}" checked>Ebay</input><br>
+			<input type="checkbox" name="productCheckboxList" id="paytmCheckbox" value="https://paytm.com/shop/search?q={0}" checked>Paytm</input><br>
+			<input type="checkbox" name="productCheckboxList" id="bigbasketCheckbox" value="http://www.bigbasket.com/ps/?q={0}" checked>Bigbasket</input><br>
+			<br><a id="shopSearchButton" class="highlightGreen">Search</a>
 			<a id="openDealsAnchor" class="highlightRed">Deals of the day</a>
 		</div>
 		
@@ -81,17 +80,19 @@
 		
 		<div id="About">
 			The main goal of this extension is to help you to do on-line purchase in India at best price.
-			<br><br><a id="aboutRateButton" class="highlightGreen" target="_blank" href="https://chrome.google.com/webstore/detail/compare-prices/opijkghfkmjfhfcghjpgjkpliflhjbfd/reviews?hl=en-US">Rate us</a>
+			<br><br><a id="aboutRateButton" class="highlightGreen" target="_blank" href="https://chrome.google.com/webstore/detail/opijkghfkmjfhfcghjpgjkpliflhjbfd/reviews?hl=en-US">Rate us</a>
 			<br><br>
 			Now it is a good time to also help your friends to do on-line purchase in India at best price.
 			<br><br>
 			<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/opijkghfkmjfhfcghjpgjkpliflhjbfd"><div class="fbButton shareAlign"></div></a>
-			<a target="_blank" href="https://twitter.com/intent/tweet?url=https://chrome.google.com/webstore/detail/opijkghfkmjfhfcghjpgjkpliflhjbfd&text=A%20wonderful%20chrome%20extension%20to%20help%20you%20to%20do%20on-line%20purchase%20in%20India%20at%20best%20price.&original_referer="><div class="twitterButton shareAlign"></div></a>
+			<a target="_blank" href="https://twitter.com/intent/tweet?url=https://chrome.google.com/webstore/detail/opijkghfkmjfhfcghjpgjkpliflhjbfd&text=A%20wonderful%20chrome%20extension%20to%20help%20you%20to%20do%20on-line%20purchase%20in%20India%20at%20best%20price.%20I%20have%20tried%20it%20out%20and%20it%20indeed%20saved%20my%20money.&original_referer="><div class="twitterButton shareAlign"></div></a>
 			<a target="_blank" href="mailto:?subject=hey have a look at this extension !!&amp;body=A wonderful chrome extension to help you to do on-line purchase in India at best price. - https://chrome.google.com/webstore/detail/opijkghfkmjfhfcghjpgjkpliflhjbfd"><div class="emailButton shareAlign"></div></a>
 			<br><br>
+			<p id="appVersionNumber"></p>
 		</div>
 		
 		<script src="popup.js" type="text/javascript"></script>
+		<script src="shop.js" type="text/javascript"></script>
 		<script src="flights.js" type="text/javascript"></script>
 		<script src="bus.js" type="text/javascript"></script>
 		<script src="movies.js" type="text/javascript"></script>
