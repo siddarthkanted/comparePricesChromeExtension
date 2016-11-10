@@ -35,7 +35,30 @@ function shopButtonClicks(){
 		document.getElementById("openDealsAnchor").onclick = function() {openShopDeals()};
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function shopAutoFillText(currentUrl){
+	var supportedUrls = $('input[name=productCheckboxList]').map(function()
+            {
+                return $(this).val();
+            }).get();
+	var currentUri = new URI(currentUrl);	
+	for (var count in supportedUrls) {
+		var supportedUri = new URI(supportedUrls[count]);	
+		if(currentUri.domain() == supportedUri.domain()){
+			var paramKey = getUrlParamKey(supportedUrls[count], "{0}");
+			var paramValue = getUrlParameterValue(currentUrl, paramKey);
+			if(paramValue){
+				document.getElementById('productNameText').value  = paramValue;
+			}
+		}
+	}
+}
+
+function shopInit(){
 	shopButtonClicks();
+	getCurrentUrl(shopAutoFillText);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+shopInit();
 });
 

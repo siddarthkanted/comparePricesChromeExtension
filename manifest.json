@@ -29,7 +29,7 @@
 		[
 				"*://*.zopnow.com/*","*://*.bigbasket.com/*","*://*.amazon.in/*","*://*.flipkart.com/*","*://*.snapdeal.com/*", "*://ebay.in/*","*://jabong.com/*", "*://shopclues.com/*", "*://paytm.com/*", "*://myntra.com/*"
         ],
-        "js": ["jquery/jquery-ui-1.12.1/external/jquery/jquery.js", "popup.js", "jquery/jquery-ui-1.12.1/jquery-ui.min.js", "popup.js", "shop.js", "shopContentScript.js", "displayItems.js","defaultOffers.js", "ajaxResponse.js"],
+        "js": ["jquery/jquery-ui-1.12.1/external/jquery/jquery.js", "popup.js", "jquery/jquery-ui-1.12.1/jquery-ui.min.js", "popup.js", "shop.js", "shopContentScript.js", "displayItems.js","defaultOffers.js", "ajaxResponse.js", "URI.js"],
 		"css": [ "popup.css", "jquery/jquery-ui-1.12.1/jquery-ui-contentScript.css" ],
         "run_at": "document_end"         
         },

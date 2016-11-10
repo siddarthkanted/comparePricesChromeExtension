@@ -1,6 +1,6 @@
 window.onload = function() {
 	createStripe();
-	shopButtonClicks();
+	shopInit();
 	defaultOffersDisplay();
 	chrome.runtime.sendMessage({"action":"getShopProductList"});
 	ReceiveMessages();

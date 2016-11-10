@@ -135,8 +135,20 @@
 		<script src="popup.js" type="text/javascript"></script>
 		<script src="flights.js" type="text/javascript"></script>
 		<script src="bus.js" type="text/javascript"></script>
+		<script src="URI.js" type="text/javascript"></script>
 		
     </body>
+	
+	<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var urlQueryStringObject = URI.parseQuery("http://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={0}&tag=awesomechromeextension-21");
+				for (var key in urlQueryStringObject) {
+					console.log(key, urlQueryStringObject[key]);
+				}
+				
+				
+			});
+	</script>
 	
 	
 

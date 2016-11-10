@@ -37,3 +37,20 @@ document.addEventListener('DOMContentLoaded', function() {
 $( "#tabs" ).tabs();
 appVersionNumber();
 });
+
+function getCurrentUrl(callBackFuntion){
+	//you are in content scripts
+	if(null == chrome.tabs || null == chrome.tabs.query){
+		callBackFuntion(document.location.href);
+	}else{
+	//you are in popup
+	var queryInfo = {
+		active: true, 
+		currentWindow: true
+	};
+	chrome.tabs.query(queryInfo, function(tabs) {
+		var tab = tabs[0]; 
+		callBackFuntion(tab.url);
+  });	
+	}
+}
